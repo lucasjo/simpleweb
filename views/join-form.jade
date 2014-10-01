@@ -1,0 +1,26 @@
+//
+   Created by kikimans on 2014-10-01.
+extends layout
+block content
+    h3 회원가입
+    p 회원에 가입해주세요.
+    form(id='joinForm', method='POST', action='/join')
+        label(for='name') 이름 :
+        input(type='text', name='name', id='name')
+        label(for='email') 이메일 :
+        input(type='text', name='email', id='email')
+        input(type='submit', value='전송')
+    script(type='text/javascript' src='/javascripts/join/join.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
