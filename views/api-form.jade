@@ -1,0 +1,19 @@
+//
+   Created by kikimans on 2014-10-02.
+
+
+extends layout
+block content
+    h3 API 테스트
+    p OpenSHift Rest APi Test
+    form(id='apiForm', method='POST', action='/apitest')
+        label(for='username') 이름 :
+        input(type='text', name='username', id='username')
+        label(for='password') 패스워드 :
+        input(type='password', name='password', id='password')
+        label(for='method') method :
+        input(type='text', name='method', id='method')
+        label(for='url') API URL :
+        input(type='text', name='url', id='url', length='30')
+        input(type='submit', value='전송')
+    script(type='text/javascript' src='/javascripts/apicall/apicall.js')
